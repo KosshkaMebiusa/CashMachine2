@@ -7,7 +7,6 @@ import java.util.Arrays;
 public class CashMachine {
     Integer[] cash;
     int nCoins;
-    int k =0;
     CashMachine(Integer[] coins){
         cash = coins;
         nCoins = cash.length;
