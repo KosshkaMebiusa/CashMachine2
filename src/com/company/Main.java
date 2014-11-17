@@ -10,7 +10,7 @@ public class Main {
     public static Scanner scan = new Scanner(System.in);
 
     public static int checkNumber (String message){
-        int n;
+        int n=0;
         String s;
         while (true) {
             try {
