@@ -48,8 +48,17 @@ public class Main {
             }
         }
 
-        CashMachine cash = new CashMachine(a.toArray(new Integer[a.size()]));
-        int sum = checkNumber("Enter sum to change");
-        cash.change(sum);
+        try {
+            CashMachine cash = new CashMachine(a.toArray(new Integer[a.size()]));
+            int sum = checkNumber("Enter sum to change");
+            ArrayList<String> res = cash.change(sum);
+            for (int i=0; i<res.size();i++){
+                System.out.println(res.get(i));
+            }
+        }
+        catch (Exception e){
+            System.out.println(e.getMessage());
+        }
+
     }
 }
